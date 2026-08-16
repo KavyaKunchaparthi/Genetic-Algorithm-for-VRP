@@ -1,78 +1,75 @@
-# Genetic Algorithm for Vehicle Routing Problem (VRP) 🚗📦✨
+# Genetic Algorithm for Vehicle Routing Problem (VRP) 🚚🧬
 
-![Python](https://img.shields.io/badge/Python-3.9-blue) ![DEAP](https://img.shields.io/badge/DEAP-1.3.1-brightgreen) ![Matplotlib](https://img.shields.io/badge/Matplotlib-3.4.3-yellow) ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)
+A Python-based implementation of a Genetic Algorithm (GA) for solving the
+Vehicle Routing Problem (VRP). The project uses the DEAP evolutionary
+computation framework to optimize routes for multiple vehicles with the
+objective of minimizing total travel distance.
 
-This repository contains a Jupyter Notebook implementing a genetic algorithm in Python using the DEAP library to solve the Vehicle Routing Problem (VRP). The project optimizes routes for multiple vehicles, aiming to minimize total travel distance and improve delivery efficiency. 🛣️🚚
+## 📌 Project Overview
 
-## Key Features
+The Vehicle Routing Problem (VRP) is a classical optimization problem in
+Operations Research and Supply Chain Management. Given a set of locations
+and multiple vehicles, the objective is to determine efficient vehicle
+routes while minimizing the overall travel distance.
 
-- 🧬 **Genetic Algorithm:** Engineered a solution for VRP using evolutionary computation techniques.
-- 📊 **Fitness Evaluation:** Developed a custom fitness function tailored to VRP requirements, enhancing route optimization.
-- 🗺️ **Visualization:** Utilized Matplotlib for visualizing optimized routing solutions and decision-making insights.
+This project applies a Genetic Algorithm, an evolutionary optimization
+technique, to search for efficient routing solutions.
 
-## Screenshots
+The implementation is provided as a Jupyter Notebook and includes route
+optimization, fitness evaluation, and visualization of the obtained
+solutions.
+
+## 🎯 Objectives
+
+- Optimize routes for multiple vehicles.
+- Minimize total travel distance.
+- Evaluate candidate routing solutions using a fitness function.
+- Apply evolutionary operators to improve routing solutions over generations.
+- Visualize optimized routes and fitness evolution.
+
+## 🧬 Genetic Algorithm Approach
+
+The project uses the following evolutionary process:
+
+1. Generate an initial population of candidate routing solutions.
+2. Evaluate each solution using a fitness function.
+3. Select better-performing individuals.
+4. Apply crossover to generate new solutions.
+5. Apply mutation to introduce variation.
+6. Evaluate the new population.
+7. Repeat the process over multiple generations.
+8. Obtain an optimized routing solution.
+
+The implementation uses the **DEAP** library for evolutionary computation.
+
+## 🛠️ Technologies Used
+
+- **Python**
+- **DEAP** – Genetic Algorithm / evolutionary computation
+- **NumPy** – Numerical operations
+- **Matplotlib** – Route and fitness visualization
+- **Jupyter Notebook** – Interactive development and execution
+
+## 📊 Results & Visualization
+
+The notebook generates visualizations to analyze the optimization process.
 
 ### Optimized Routes
 
 ![Optimized Routes](images/optimized_routes.jpg)
 
-_Figure 1: Visualization of optimized routes using Matplotlib._
+*Visualization of the optimized vehicle routes.*
 
 ### Fitness Evolution
 
-![Fitness Evolution](./images/fitness_evolution.png)
+![Fitness Evolution](images/fitness_evolution.png)
 
-_Figure 2: Fitness evolution during the genetic algorithm optimization process._
+*Fitness evolution across generations during the optimization process.*
 
-## Getting Started
+## 🚀 Getting Started
 
-To view and interact with the Jupyter Notebook:
+### 1. Clone the repository
 
-1. **Clone the repository:**
-
-   ```bash
-   git clone https://github.com/PacemakerX/Genetic-Algorithm-for-VRP.git
-   cd your_repository
-   ```
-
-2. **Install Dependencies:**
-It's recommended to use a virtual environment:
-
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-   pip install -r requirements.txt
-   ```
-
-3. **Launch Jupyter Notebook:**
-Start the Jupyter Notebook server:
-
-   ```bash
-   jupyter notebook
-   ```
-
-    This will open a new tab in your web browser with the Jupyter Notebook interface.
-
-4. **Open and Run the Notebook:**
-
-Navigate to the notebook file (vehicleRoutingProblem-Solution.ipynb) in the Jupyter interface and open it. Follow the instructions within the notebook to execute the genetic algorithm and visualize the results.
-
-## 📂 Project Structure
-
-```csharp
-vehicleRoutingProblem
-├── README.md
-├── images
-│   ├── fitness_evolution.png
-│   └── optimized_routes.jpg
-├── requirements.txt
-└── vehicleRoutingProblem-Solution.ipynb
-```
-
-## 📞 Contact
-
-Sparsh Soni - [@Sparsh Soni](https://linkedin.com/in/sparshsoni) - sparsh.officialwork@gmail.com
-
-Project Link: [https://github.com/PacemakerX/Genetic-Algorithm-for-VRP.git](https://github.com/PacemakerX/Genetic-Algorithm-for-VRP.git)
-
-## ⭐️ Don't forget to give the project a star if you found it useful!
+```bash
+git clone https://github.com/KavyaKunchaparthi/Genetic-Algorithm-for-VRP.git
+cd Genetic-Algorithm-for-VRP/Project
